@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.modal-container {
+    opacity: 1;
+    transform: translateY(-10%);
+    transition: opacity 0.3 ease, transform 0.3s ease;
+}
+
+.modal-container.show {
+    opacity: 1;
+    transform: translateY(0);
+}
